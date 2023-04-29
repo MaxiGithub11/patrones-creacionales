@@ -11,7 +11,7 @@ public class SoyUnica {
     }
      public static SoyUnica getSingletonInstance(String nombre){
         if (soyUnica==null){
-            soyUnica= new SoyUnica(nombre);
+            soyUnica=new SoyUnica(nombre);
          }
          else{
              System.out.println("No se puede crear el objeto " + nombre + " porque ya existe un objeto con la clase  SoyUnica");
@@ -28,11 +28,5 @@ public class SoyUnica {
         this.nombre = nombre;
     }
 
-    public static SoyUnica getSoyUnica() {
-        return soyUnica;
-    }
-
-    public static void setSoyUnica(SoyUnica soyUnica) {
-        SoyUnica.soyUnica = soyUnica;
-    }
+    
 }
