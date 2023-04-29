@@ -14,14 +14,14 @@ public class Menu {
     private Integer pan;
     private Boolean salsa;
     private Integer cafe;
-    private Integer leche;
+    private Boolean leche;
     private Integer nuggets;
     private Integer cremaHelada;
     private Integer oreo;
 
     public Menu(MenuType type, Integer carne, Integer pollo, Boolean tomate, Boolean lechuga, Boolean cebolla,
                 Boolean papa, Integer cheddar, Boolean gaseosa, Boolean agua, Integer pan, Boolean salsa,
-                Integer cafe, Integer leche, Integer nuggets, Integer cremaHelada, Integer oreo) {
+                Integer cafe, Boolean leche, Integer nuggets, Integer cremaHelada, Integer oreo) {
         this.type = type;
         this.carne = carne;
         this.pollo = pollo;
@@ -145,11 +145,11 @@ public class Menu {
         this.cafe = cafe;
     }
 
-    public Integer getLeche() {
+    public Boolean getLeche() {
         return leche;
     }
 
-    public void setLeche(Integer leche) {
+    public void setLeche(Boolean leche) {
         this.leche = leche;
     }
 
