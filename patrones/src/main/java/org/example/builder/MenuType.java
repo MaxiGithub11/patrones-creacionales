@@ -1,0 +1,5 @@
+package org.example.builder;
+
+public enum MenuType {
+    MC_CRISPY_CHICKEN, BIGMAC, MCNIFICA, CAJITA_FELIZ, GRAND_TASTY_DOBLE, GRAND_TASTY_TRIPLE, ENSALADA, MCFLURRY_OREO
+}
