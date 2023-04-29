@@ -2,6 +2,12 @@ package org.example.singleton;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Main de Sofi");
+        SoyUnica sofi= SoyUnica.getSingletonInstance("Sofia Souza");
+        SoyUnica maria= SoyUnica.getSingletonInstance("Maria Valdez");
+
+        System.out.println(sofi.getNombre());
+        System.out.println(maria.getNombre());
+
+
     }
 }
