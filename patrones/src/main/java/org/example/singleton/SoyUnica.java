@@ -4,11 +4,11 @@ public class SoyUnica {
     private String nombre;
     private static SoyUnica soyUnica;
 
-    // El constructor es privado, no permite que se genere un constructor por defecto
     private SoyUnica(String nombre) {
         this.nombre = nombre;
         System.out.println("Mi nombre es " + this.nombre);
     }
+
      public static SoyUnica getSingletonInstance(String nombre){
         if (soyUnica==null){
             soyUnica=new SoyUnica(nombre);
@@ -28,5 +28,5 @@ public class SoyUnica {
         this.nombre = nombre;
     }
 
-    
+
 }
