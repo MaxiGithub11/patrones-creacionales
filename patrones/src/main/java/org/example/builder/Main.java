@@ -7,10 +7,10 @@ public class Main {
         DirectorCarta directorCarta = new DirectorCarta();
 
         MenuBuilder menuBuilder = new MenuBuilder();
-        directorCarta.crearCuartoDeLibra(menuBuilder);
+        directorCarta.crearDobleCuartoDeLibra(menuBuilder);
 
         Menu menu = menuBuilder.getMenu();
-        System.out.println(menu.getType());
+        System.out.println(menu.getType().name());
 
     }
 }
